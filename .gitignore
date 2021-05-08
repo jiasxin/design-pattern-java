@@ -1,3 +1,7 @@
+############################idea
+.idea/
+design-pattern-java1.iml
+############################maven
 target/
 pom.xml.tag
 pom.xml.releaseBackup
