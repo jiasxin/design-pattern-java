@@ -1,7 +1,7 @@
 package com.mvn.designpattern.chapter02.demo01;
 
 /**
- * 3 创建具体工厂角色
+ * 4 创建具体工厂角色
  * 数据库日志记录器工厂
  */
 public class DatabaseLoggerFactory implements LoggerFactory {
