@@ -21,7 +21,7 @@ public enum ThemeEnum {
 
 	public static ThemeEnum getThemeEnumByCode(String code) {
     	for (ThemeEnum enumObj : ThemeEnum.values()) {
-            if (enumObj.getCode() == code) {
+            if (enumObj.getCode().equals(code.toUpperCase())) {
                 return enumObj;
             }
         }
@@ -30,7 +30,7 @@ public enum ThemeEnum {
     
     public static String getThemeEnumNameByCode(String code) {
     	for (ThemeEnum enumObj : ThemeEnum.values()) {
-            if (enumObj.getCode() == code) {
+            if (enumObj.getCode().equals(code.toUpperCase())) {
                 return enumObj.getName();
             }
         }

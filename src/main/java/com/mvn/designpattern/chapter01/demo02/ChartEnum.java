@@ -1,5 +1,8 @@
 package com.mvn.designpattern.chapter01.demo02;
 
+/**
+ * 图形类型枚举
+ */
 public enum ChartEnum {
 
 	HISTOGRAM("柱状图", "HISTOGRAM"), 
@@ -8,7 +11,6 @@ public enum ChartEnum {
 	
 	/** 名称 **/
 	private String name;  
-	
 	/** 唯一编码 **/
     private String code;  
   
@@ -19,7 +21,7 @@ public enum ChartEnum {
     
     public static ChartEnum getChartEnumByCode(String code) {
     	for (ChartEnum enumObj : ChartEnum.values()) {
-            if (enumObj.getCode() == code) {
+            if (enumObj.getCode().equals(code.toUpperCase())) {
                 return enumObj;
             }
         }
@@ -28,7 +30,7 @@ public enum ChartEnum {
     
     public static String getChartEnumNameByCode(String code) {
     	for (ChartEnum enumObj : ChartEnum.values()) {
-            if (enumObj.getCode() == code) {
+            if (enumObj.getCode().equals(code.toUpperCase())) {
                 return enumObj.getName();
             }
         }
