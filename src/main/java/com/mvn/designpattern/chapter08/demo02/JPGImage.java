@@ -1,4 +1,3 @@
-//designpatterns.bridge.JPGImage.java
 package com.mvn.designpattern.chapter08.demo02;
 
 /**

@@ -1,0 +1,36 @@
+package com.mvn.designpattern.chapter12.demo01;
+
+/**
+ * 测试享元模式
+ */
+public class Client {
+
+    public static void main(String args[]) {
+
+        IgoChessman black1, black2, black3, white1, white2;
+        IgoChessmanFactory factory;
+
+        //返回享元工厂对象
+        factory = IgoChessmanFactory.getInstance();
+
+        //通过享元工厂对象获取2颗黑子
+        black1 = factory.getIgoChessman("b");
+        black2 = factory.getIgoChessman("b");
+        System.out.println("判断两颗黑子是否相同" + (black1 == black2));
+
+        //通过享元工厂获取2颗白子
+        white1 = factory.getIgoChessman("w");
+        white2 = factory.getIgoChessman("w");
+        System.out.println("判断两颗白子是否相同" + (white1 == white2));
+
+        //显示黑子
+        black1.display();
+        black2.display();
+
+        //显示白子
+        white1.display();
+        white2.display();
+
+    }
+
+}

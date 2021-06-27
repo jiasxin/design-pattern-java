@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config>
+    <className>com.mvn.designpattern.chapter11.demo01.NewEncryptFacade</className>
+</config>

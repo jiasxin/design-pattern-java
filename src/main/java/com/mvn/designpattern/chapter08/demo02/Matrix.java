@@ -1,4 +1,3 @@
-//designpatterns.bridge.Matrix.java
 package com.mvn.designpattern.chapter08.demo02;
 
 /**

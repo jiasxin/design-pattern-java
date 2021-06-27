@@ -1,4 +1,3 @@
-//designpatterns.composite.VideoFile.java
 package com.mvn.designpattern.chapter09.demo01;
 
 /**
