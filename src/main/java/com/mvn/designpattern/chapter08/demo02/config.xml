@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config>
+	<!--RefinedAbstraction-->
+	<className>com.mvn.designpattern.chapter08.demo02.GIFImage</className>
+	<!--ConcreteImplementor-->
+	<className>com.mvn.designpattern.chapter08.demo02.WindowsImageImpl</className>
+</config>
